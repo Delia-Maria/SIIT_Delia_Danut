@@ -1,0 +1,25 @@
+
+           body{
+               font-size:20px;
+           }
+            h1 {
+                color:green;
+                background-color: rgb(38, 48, 29);
+                font-size:1.5rem;
+
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .articol {
+                background-color: coral;
+
+            }
+            #my-post{
+                background-color: darkgray;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
