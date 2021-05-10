@@ -1,0 +1,27 @@
+div.title{
+    text-align:center;
+    font-family:monospace;
+
+
+}
+div.menu    {
+    text-align:right;
+    background-color: rgb(149, 182, 182);
+    font-family: monospace;
+    text-decoration:none;
+          
+
+}
+div.info {
+    text-align:center;
+    background-color: rgb(149, 182, 182);
+    font-family:monospace;
+}
+
+
+.box1, .box2 {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 4px solid rgb(149, 182, 182);
+ }
