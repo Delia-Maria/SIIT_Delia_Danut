@@ -19,7 +19,7 @@ div.info {
 }
 
 #buton {
-    display: none;
+    /* display: none; */
     cursor: pointer;
     position: fixed;
     right: 10px;

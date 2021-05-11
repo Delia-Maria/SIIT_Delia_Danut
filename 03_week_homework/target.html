@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Modal Title
+    </title>
+    <style>
+        .square {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-style: groove;
+        }
+        
+        img {
+            max-width: 70%;
+        }
+        
+        header {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        
+        input[type=submit] {
+            color: rgb(97, 12, 216);
+            border: none;
+            width: 80px;
+            height: 40px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: rgb(97, 12, 216);
+            color: white;
+        }
+        
+        .butoane {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="square">
+        <header>
+
+            <div calss="titlu">
+                <h2>Modal Title</h2>
+            </div>
+            <div class="x">
+                <img src="poze/x.jpeg" alt="iesire" style="width: 50px">
+            </div>
+        </header>
+        <br>
+
+        <form action="home.html" method="get">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Name">
+            <div class="butoane">
+                <input type="submit" value="Submit">
+                <input type="submit" value="Close">
+            </div>
+        </form>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
