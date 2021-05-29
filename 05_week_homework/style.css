@@ -5,6 +5,7 @@
 .new-comment {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -13,36 +14,38 @@
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-top: 6px;
+    vertical-align: bottom
 }
 
 .btn-add {
     background-color: rgb(68, 134, 196);
-    width: 100px;
-    height: 40px;
+    width: 110px;
     border-radius: 5px;
     color: ivory;
     border: none;
+    height: 40px;
 }
 
-
-}
 .all-comments {
     justify-content: center;
 }
+
 .comment {
     border: 1px solid rgb(155, 211, 211);
     padding: 20px;
 }
+
 .poza-content {
     display: flex;
     align-items: center;
 }
+
 .poza {
     border: 1px solid rgb(15, 20, 20);
     border-radius: 250px;
     width: 10%;
 }
+
 .btn-delete {
     background-color: rgb(230, 59, 47);
     width: 80px;
