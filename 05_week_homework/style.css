@@ -9,7 +9,7 @@
     margin-bottom: 10px;
 }
 
-.input-com {
+#input-com {
     width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -17,7 +17,7 @@
     vertical-align: bottom
 }
 
-.btn-add {
+#btn-add {
     background-color: rgb(68, 134, 196);
     width: 110px;
     border-radius: 5px;
@@ -30,14 +30,10 @@
     justify-content: center;
 }
 
-.comment {
+.comment1,
+.comment2 {
     border: 1px solid rgb(155, 211, 211);
     padding: 20px;
-}
-
-.poza-content {
-    display: flex;
-    align-items: center;
 }
 
 .poza {
