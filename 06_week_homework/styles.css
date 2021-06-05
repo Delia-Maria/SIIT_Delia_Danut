@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url(rock.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    text-shadow: black;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-rock,
+#btn-paper,
+#btn-scissors {
+    text-align: center;
+    background-color: rgb(9, 19, 9);
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 40px;
+    font-family: monospace;
+    font-size: 130%;
+    margin-left: 10px;
+}
+
+#btn-rock:hover {
+    box-shadow: 0 12px 16px 0 rgba(240, 225, 192, 0.434), 0 17px 50px 0 rgba(240, 225, 192, 0.434);
+    color: rgba(245, 236, 219, 0.434);
+}
+
+#btn-paper:hover {
+    box-shadow: 0 12px 16px 0 rgba(240, 225, 192, 0.434), 0 17px 50px 0 rgba(240, 225, 192, 0.434);
+    color: rgba(245, 236, 219, 0.434);
+}
+
+#btn-scissors:hover {
+    box-shadow: 0 12px 16px 0 rgba(240, 225, 192, 0.434), 0 17px 50px 0 rgba(240, 225, 192, 0.434);
+    color: rgba(245, 236, 219, 0.434);
+}
