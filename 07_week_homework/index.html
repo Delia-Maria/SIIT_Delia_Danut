@@ -8,12 +8,15 @@
     <title>Document</title>
     <style>
         .container {
-            margin: 0 auto;
+            margin-bottom: 10px;
+            margin-top: 50px;
         }
         
         #hour,
         #minutes,
         #seconds {
+            font-size: 50px;
+            height: 100px;
             width: 100px;
             border: none;
             background-color: rgb(147, 211, 189);
@@ -21,12 +24,21 @@
             border-radius: 10%;
         }
         
-        .button-container {}
+        b {
+            font-size: 35px;
+            font-family: monospace;
+        }
         
-        .start-btn,
-        .stop-btn,
-        .reset-btn,
-        .save-btn {
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #start-btn,
+        #stop-btn,
+        #reset-btn,
+        #save-btn {
             width: 80px;
             height: 40px;
             border: none;
@@ -41,22 +53,22 @@
             transition-duration: 0.4s;
         }
         
-        .start-btn:hover {
+        #start-btn:hover {
             background-color: rgb(147, 211, 189);
             color: black;
         }
         
-        .stop-btn:hover {
+        #stop-btn:hover {
             background-color: rgb(147, 211, 189);
             color: black;
         }
         
-        .save-btn:hover {
+        #save-btn:hover {
             background-color: rgb(147, 211, 189);
             color: black;
         }
         
-        .reset-btn:hover {
+        #reset-btn:hover {
             background-color: rgb(147, 211, 189);
             color: black;
         }
@@ -65,15 +77,17 @@
 
 <body>
     <div class="container">
-        <span id="hour">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        <span id="hour">00</span><b>:</b><span id="minutes">00</span><b>:</b><span id="seconds">00</span>
     </div>
 
     <div class="button-container">
-        <button class="start-btn">START</button>
-        <button class="stop-btn">STOP</button>
-        <button class="reset-btn">RESET</button>
-        <button class="save-btn">SAVE</button>
+        <button id="start-btn">START</button>
+        <button id="stop-btn">STOP</button>
+        <button id="reset-btn">RESET</button>
+        <button id="save-btn">SAVE</button>
     </div>
+
+
     <script src="./app.js"></script>
 </body>
 
