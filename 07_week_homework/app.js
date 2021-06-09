@@ -83,9 +83,6 @@ btnReset.addEventListener('click', function() {
 const btnSave = document.getElementById('save-btn');
 btnSave.addEventListener('click', function() {
     const container = document.querySelector('container');
-
-
-
-    container.innerHTML = 'span';
+    container.innerText;
 
 })
