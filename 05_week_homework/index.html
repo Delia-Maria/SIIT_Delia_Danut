@@ -72,16 +72,21 @@
             var paragraf = document.createElement('p')
             paragraf.innerText = comentariu;
 
-            var button = document.createElement('button')
-            button.innerHTML = "Delete";
-            button.classList.add("btn-delete")
+            var buttonDelete = document.createElement('button')
+            buttonDelete.innerHTML = "Delete";
+            buttonDelete.classList.add("btn-delete")
 
             commentDiv.appendChild(image)
             commentDiv.appendChild(email)
             commentDiv.appendChild(paragraf)
-            commentDiv.appendChild(button)
+            commentDiv.appendChild(buttonDelete)
+
+            buttonDelete.addEventListener('click', function(event) {
+                buttonDelete.parentElement.remove()
+            })
 
             return commentDiv;
+
         }
 
         var commentContainer = document.querySelector('.all-comments');
