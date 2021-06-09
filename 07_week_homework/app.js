@@ -1,6 +1,8 @@
 var hourElement = document.getElementById("hour");
 var minuteElement = document.getElementById("minutes");
 var secondElement = document.getElementById("seconds");
+var container = document.querySelector(".container");
+var timeList = document.getElementById("list-of-time");
 
 
 var minutesCount = 0;
@@ -82,7 +84,9 @@ btnReset.addEventListener('click', function() {
 
 const btnSave = document.getElementById('save-btn');
 btnSave.addEventListener('click', function() {
-    const container = document.querySelector('container');
-    container.innerText;
+
+    const timeElement = timeList.appendChild(document.createElement('li'));
+    timeElement.innerHTML = container.innerText;
+
 
 })
