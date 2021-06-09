@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <div class="new-comment">
+        <input id="input-com" value="Add comments">
+        <button type="button" id="btn-add">Add </button>
+    </div>
+
+    <div class="all-comments">
+
+        <div class="comment1">
+
+            <img class="poza" img src="caine.png">
+
+            <div class="content">
+                <h3>delia@gmail.com</h3>
+                <p>Hello, it's WORKING!</p>
+            </div>
+
+            <button type="button" class="btn-delete">Delete</button>
+        </div>
+
+
+    </div>
+    <script>
+        var comment2 = {
+            imgFile: 'caine.jpg',
+            email: "delia@gmail.com",
+            comentariu: "helllooo, merge",
+            id: 1
+        }
+
+        var commentList = [
+            comment2, {
+                imgFile: 'caine.jpg',
+                email: "delia@gmail.com",
+                comentariu: "poijbkdsamndf,.s,mdf",
+                id: 2
+            }, {
+                imgFile: 'caine.jpg',
+                email: "delia@gmail.com",
+                comentariu: "Stooooop",
+                id: 3
+            }
+        ]
+
+        function createComment(comentariu) {
+
+
+            var commentDiv = document.createElement('div')
+            commentDiv.classList.add("comment2")
+
+            var image = document.createElement('img')
+            image.src = 'caine.png'
+            image.classList.add("poza")
+
+            var email = document.createElement('h3')
+            email.innerText = comment2.email;
+
+            var paragraf = document.createElement('p')
+            paragraf.innerText = comentariu;
+
+            var buttonDelete = document.createElement('button')
+            buttonDelete.innerHTML = "Delete";
+            buttonDelete.classList.add("btn-delete")
+
+            commentDiv.appendChild(image)
+            commentDiv.appendChild(email)
+            commentDiv.appendChild(paragraf)
+            commentDiv.appendChild(buttonDelete)
+
+            buttonDelete.addEventListener('click', function(event) {
+                buttonDelete.parentElement.remove()
+            })
+
+            return commentDiv;
+
+        }
+
+        var commentContainer = document.querySelector('.all-comments');
+        var commentDivFunct = createComment("mergeeeee")
+        commentContainer.appendChild(commentDivFunct)
+
+        // console.log(document.querySelector(".all-comments"))
+
+
+        for (var index = 0; index < commentList.length; index++) {
+            var commentItem = commentList[index];
+
+            var commentContainer = document.querySelector('.all-comments');
+            var commentDivFunct = createComment(commentItem.comentariu)
+            commentContainer.appendChild(commentDivFunct)
+
+        }
+
+        var btnAdd = document.getElementById('btn-add');
+        var inputComment = document.getElementById('input-com')
+
+        btnAdd.addEventListener('click', function(event) {
+
+
+            var commentContainer = document.querySelector('.all-comments');
+            var commentDivFunct = createComment(inputComment.value)
+            commentContainer.appendChild(commentDivFunct)
+
+        })
+    </script>
+</body>
+
+</html>
