@@ -1,4 +1,8 @@
 var gameChoice = ["rock", "paper", "scissors"];
+var userScore = 0;
+var buttonsElem = document.getElementById("buttons");
+const scoreElement = buttonsElem.appendChild(document.createElement("p"));
+
 
 function addEventForUser(butonParam) {
     var btn = document.getElementById("btn-" + butonParam); //selectam butoanele pe rand in functie de cel care a fost apasat de user
@@ -8,6 +12,14 @@ function addEventForUser(butonParam) {
         console.log("Pc Choice: " + pcChoice);
         console.log("User Choice: " + butonParam);
         console.log(getResult(pcChoice, butonParam)); //apelam functia getResult
+
+        if (getResult == pcChoice) {
+            scoreElement.innerText = "PC won!";
+        } else if (getResult != pcChoice) {
+            scoreElement.innerText = "User won!";
+        } else {
+            scoreElement.innerText = "Both won!";
+        }
     });
 
 }

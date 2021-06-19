@@ -64,5 +64,20 @@ h1 {
     height: 40px;
     font-family: monospace;
     font-size: 130%;
-    margin-top: 10px;
+    text-align: center;
+}
+
+#list-of-score {
+    font-size: 20px;
+    height: 20px;
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    text-shadow: black;
 }
