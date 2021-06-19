@@ -53,3 +53,16 @@ h1 {
     box-shadow: 0 12px 16px 0 rgba(240, 225, 192, 0.434), 0 17px 50px 0 rgba(240, 225, 192, 0.434);
     color: rgba(245, 236, 219, 0.434);
 }
+
+#start {
+    align-self: center;
+    background-color: white;
+    width: 150px;
+    border-radius: 5px;
+    color: rgb(49, 47, 47);
+    border: none;
+    height: 40px;
+    font-family: monospace;
+    font-size: 130%;
+    margin-top: 10px;
+}
