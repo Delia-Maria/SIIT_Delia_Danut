@@ -37,7 +37,7 @@ function displayPosts() {
 }
 
 function createPost() {
-    const post = { title: 'dela', text: '12345' }
+    // const post = { title: 'deliaaaaaaaaaaaaa', text: '12345' }
     fetch('http://localhost:3000/posts', {
         method: 'POST',
         headers: {
@@ -47,5 +47,8 @@ function createPost() {
     })
 
 }
+document.getElementById('add-buton').addEventListener("click", function() {
+    createPost();
+})
 
 displayPosts();
