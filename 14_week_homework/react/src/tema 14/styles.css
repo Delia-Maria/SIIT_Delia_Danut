@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(171, 211, 212);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: monospace;
+    color: rgb(28, 63, 63);
+}
+
+#FilterableProductTable {
+    border-style: solid;
+    background-color: rgb(240, 181, 160)
+}
